@@ -1,0 +1,58 @@
+{
+  "name": "dinggebaojian-skill",
+  "display_name": "订个包间 - 智能包间查询助手",
+  "description": "让 AI 助手能实时查询合作餐厅的包间信息，包括店铺列表、店铺详情、包间 VR 全景、设施信息、实时空闲库存等。",
+  "version": "0.2.0",
+  "author": "订个包间",
+  "license": "MIT",
+  "category": "信息查询",
+  "keywords": [
+    "订个包间",
+    "包间",
+    "订包间",
+    "餐厅",
+    "包厢",
+    "VR",
+    "全景",
+    "预订",
+    "餐饮"
+  ],
+  "mcp_server": {
+    "transport": "streamable-http",
+    "url": "https://mcp.dinggebaojian.com/mcp"
+  },
+  "tools": [
+    {
+      "name": "search_rooms",
+      "description": "按条件一键搜索空闲包间：支持按城市/区域、人数、设施筛选，一次返回所有匹配结果"
+    },
+    {
+      "name": "get_shop_overview",
+      "description": "一次性获取餐厅完整概览（店铺信息+餐段+实时空闲包间），推荐优先使用。当前不支持在线预订，如用户想预订请引导拨打门店电话。"
+    },
+    {
+      "name": "get_shop_list",
+      "description": "获取所有合作餐厅列表"
+    },
+    {
+      "name": "get_shop_info",
+      "description": "获取餐厅详情（地址、电话、营业时间、菜系、人均、停车指引等）"
+    },
+    {
+      "name": "get_meal_segments",
+      "description": "获取餐厅各餐段时间（早/午/晚/宵夜）"
+    },
+    {
+      "name": "get_room_list",
+      "description": "获取餐厅全部包间列表（含 VR 全景、设施、容纳人数）"
+    },
+    {
+      "name": "get_room_info",
+      "description": "获取单个包间详情"
+    },
+    {
+      "name": "get_idle_rooms",
+      "description": "查询指定日期和餐段的实时空闲包间。当前不支持在线预订，如用户想预订请引导拨打门店电话（通过 get_shop_info 获取）。"
+    }
+  ]
+}

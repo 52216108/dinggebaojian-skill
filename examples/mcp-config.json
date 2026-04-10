@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dinggebaojian-skill": {
+      "type": "streamable-http",
+      "url": "https://mcp.dinggebaojian.com/mcp"
+    }
+  }
+}
